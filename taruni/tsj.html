@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taruni Sai Jewellery</title>
+  <link rel="stylesheet" href="tsj.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      padding: 10px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      max-height: 170px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+      text-align: center;
+      transition: opacity 0.3s ease;
+    }
+
+    #home {
+      display: block;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-box {
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-box img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .collection-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .collection-item {
+      background: #fdf6f0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .collection-item h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #b8860b;
+    }
+
+    .collection-item ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .collection-item li {
+      margin: 5px 0;
+    }
+
+    .collection-item a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s;
+    }
+
+    .collection-item a:hover {
+      color: #d4af37;
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .header-top {
+      background-color: #222;
+      padding: 5px 0;
+    }
+
+    .welcome-message {
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Header Area -->
+  <header class="header-area header-wide">
+    <div class="header-top bdr-bottom">
+      <div class="container">
+        <div class="welcome-message">
+          <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" class="first-m" style="color: #fff;">
+            <span>Today: Gold 22k - 1g = Rs. 9230 | Silver 1g = Rs. 120 | Platinum 1g = Rs. 4396</span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <a href="https://ibb.co/BKC0xLPP">
+        <img src="https://i.ibb.co/yBQH10RR/Screenshot-2025-06-23-195637.png" alt="Taruni Sai Logo" class="logo-img" />
+      </a>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h2>Welcome to Taruni Sai Jewellery</h2>
+    <p>Where elegance meets tradition.</p>
+
+    <div class="image-row">
+      <div class="image-box">
+        <a href="https://ibb.co/6JBxSGtq">
+          <img src="https://i.ibb.co/1J65NBX4/Padmakshi-Jewellers-Product-Photography.jpg" alt="Jewellery 1" />
+        </a>
+      </div>
+      <div class="image-box">
+        <a href="https://ibb.co/8gc40HQj">
+          <img src="https://i.ibb.co/zVJHrztS/download.jpg" alt="Jewellery 2" />
+        </a>
+      </div>
+      <div class="image-box">
+        <a href="https://ibb.co/JRXJt1FS">
+          <img src="https://i.ibb.co/GvgSp63r/img-3.jpg" alt="Jewellery 3" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section id="collection" class="collections">
+    <div class="container">
+      <h2>Our Collections</h2>
+      <div class="collection-grid">
+        <div class="collection-item">
+          <h3><a href="#" id="goldToggle">Gold</a></h3>
+          <ul id="goldItems" style="display: none;">
+            <li><a href="earrings">Earrings</a></li>
+            <li><a href="rings">Rings</a></li>
+            <li><a href="pendants">Pendants</a></li>
+            <li><a href="bangles">Bangles</a></li>
+            <li><a href="necklaces">Necklaces</a></li>
+            <li><a href="chains">Chains</a></li>
+            <li><a href="oddiyaanam">Oddiyaanam</a></li>
+            <li><a href="bracelets">Bracelets</a></li>
+            <li><a href="haaram">Haaram</a></li>
+            <li><a href="antique">Antique</a></li>
+            <li><a href="jhumkas">Jhumkas</a></li>
+          </ul>
+        </div>
+        <div class="collection-item"><h3><a href="diamond">Diamond</a></h3></div>
+        <div class="collection-item"><h3><a href="silver">Silver</a></h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a trusted name in fine jewellery, blending modern design with timeless craftsmanship.</p>
+    <div class="collection-item">
+      <h3><a href="branches">Branches</a></h3>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@tarunisaijewels.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <div class="collection-item">
+      <h3><a href="contact-us">Contact Us</a></h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Taruni Sai Jewellery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".main-nav a");
+      const sections = document.querySelectorAll("section");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          sections.forEach(section => section.style.display = "none");
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) targetSection.style.display = "block";
+        });
+      });
+
+      const goldToggle = document.getElementById("goldToggle");
+      const goldItems = document.getElementById("goldItems");
+
+      goldToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        goldItems.style.display = goldItems.style.display === "none" ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
+
